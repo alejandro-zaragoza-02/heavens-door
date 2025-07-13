@@ -1,0 +1,17 @@
+---
+import "../../styles/global.css";
+import Layout from "../../layouts/Layout.astro";
+import {carta_bar} from "../../data/carta";
+import {setIdioma} from "../../utils/i18n";
+import Header from "../../components/Header.astro";
+import ElegirCategoria from "../../components/ElegirCategoria.astro";
+
+setIdioma('es');
+---
+
+<Layout>
+  <Header mostrarTodo={true} />
+  <div class="h-full flex flex-col mt-10 px-8 gap-4">
+    {carta_bar.map((categoria) => <ElegirCategoria categoria={categoria} />)}
+  </div>
+</Layout>

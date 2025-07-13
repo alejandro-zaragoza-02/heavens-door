@@ -1,0 +1,19 @@
+---
+import "../../styles/global.css";
+import Layout from "../../layouts/Layout.astro";
+import {carta_bar} from "../../data/carta";
+import Categoria from "../../components/Categoria.astro";
+import Header from "../../components/Header.astro";
+import {setIdioma} from "../../utils/i18n";
+
+setIdioma('es');
+---
+
+<Layout>
+    <Header mostrarTodo={true} />
+    <div class="h-[calc(100vh-4rem)] overflow-y-auto scroll-smooth">
+        {carta_bar.map((categoria) => <Categoria categoria={categoria} />)}
+    </div>
+
+
+</Layout>

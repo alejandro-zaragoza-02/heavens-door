@@ -1,0 +1,15 @@
+---
+import type {ICategoria} from "../interfaces/Categoria";
+import {getIdioma, traducir} from "../utils/i18n";
+
+const { categoria } = Astro.props as {
+    categoria: ICategoria;
+};
+---
+
+<a href={`${getIdioma()}/productos#${categoria.nombre}`} class="flex items-center gap-4 px-4 py-2 bg-white/10 backdrop-blur text-white border border-white/20 rounded-xl">
+    <img src={`/src/assets/images/${categoria.imagen}`} class="w-16 h-16" />
+    <h2 class="text-2xl font-bold text-center">
+        {traducir(categoria.nombre)}
+    </h2>
+</a>

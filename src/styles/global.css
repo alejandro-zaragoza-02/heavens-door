@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+.fondo {
+    background-image: url(../assets//images/fondo_pizarra.webp);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}

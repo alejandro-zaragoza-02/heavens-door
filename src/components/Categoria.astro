@@ -1,0 +1,18 @@
+---
+import type { ICategoria } from "../interfaces/Categoria";
+import Producto from "./Producto.astro";
+import {traducir} from "../utils/i18n";
+
+const { categoria } = Astro.props as {
+  categoria: ICategoria;
+};
+---
+
+<section class="my-8">
+  <h2 class="text-2xl font-bold text-center mb-6 scroll-mt-8" id={categoria.nombre}>
+    {traducir(categoria.nombre)}
+  </h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 pb-5">
+    {categoria.productos.map((producto) => <Producto {...producto} />)}
+  </div>
+</section>
