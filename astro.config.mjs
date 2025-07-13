@@ -10,5 +10,11 @@ export default defineConfig({
   i18n: {
     locales: ['es', 'en'],
     defaultLocale: 'es'
-  }
+  },
+  site: 'https://alejandro-zaragoza-02.github.io/heavens-door/',
+  base: '/heavens-door/',
+  build: {
+    assets: '_astro',
+  },
+  output: 'static',
 });
