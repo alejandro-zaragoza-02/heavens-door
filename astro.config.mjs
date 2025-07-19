@@ -12,7 +12,6 @@ export default defineConfig({
     defaultLocale: 'es'
   },
   site: 'https://alejandro-zaragoza-02.github.io/heavens-door/',
-  base: '/heavens-door/',
   build: {
     assets: '_astro',
   },

@@ -5,9 +5,9 @@ import {traducir} from "../utils/i18n";
 const producto = Astro.props as IProducto;
 ---
 
-<div class="px-4 py-3">
+<div class="py-3">
   <div class="flex flex-row justify-between">
-    <h3 class="text-xl font-bold">{traducir(producto.nombre)}</h3>
+    <h3 class="text-xl font-semibold">{traducir(producto.nombre)}</h3>
     <span class="text-lg font-semibold w-10">{producto.precio} €</span>
   </div>
   {

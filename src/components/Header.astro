@@ -8,7 +8,7 @@ const {mostrarTodo} = Astro.props as { mostrarTodo: boolean };
     {mostrarTodo && (<a href={`/${getIdioma()}`} class="flex-1 flex items-center sticky top-0">
         <img src="/src/assets/images/lupa.svg" alt="Categorias" class="text-white-100 w-5 rounded"/>
     </a>)}
-    <h1 class="text-3xl text-center font-bold flex-auto">Heaven's Door</h1>
+    <img src="/src/assets/images/logo.png" alt="Heaven's Door" class="w-60 h-10 object-cover" />
     {mostrarTodo && (<a href="/" class="flex-1 flex justify-end">
         <img src={`/src/assets/flags/${getIdioma()}.svg`} class="w-8 rounded" alt={getIdioma()}/>
     </a>)}

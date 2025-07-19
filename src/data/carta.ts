@@ -3,7 +3,7 @@ import type { ICategoria } from "../interfaces/Categoria";
 export const carta_bar: ICategoria[] = [
   {
     nombre: "PARA_COMPARTIR",
-    imagen: "no_image.jpg",
+    imagen: "nachos.png",
     productos: [
       {
         nombre: "ENSALADA_NOVA",
@@ -49,8 +49,56 @@ export const carta_bar: ICategoria[] = [
     ],
   },
   {
+    nombre: "HAMBURGUESAS",
+    descripcion: "HB_CON_PAN_BRIOCHE",
+    imagen: "burguer.png",
+    productos: [
+      {
+        nombre: "HB_CLASICA_CON_QUESO",
+        descripcion: "HB_CLASICA_CON_QUESO_DESC",
+        precio: 7.5,
+      },
+      {
+        nombre: "HB_POLLO",
+        descripcion: "HB_POLLO_DESC",
+        precio: 8,
+      },
+      {
+        nombre: "HB_HEAVENS",
+        descripcion: "HB_HEAVENS_DESC",
+        precio: 9,
+      },
+      {
+        nombre: "HB_CINECOPAS",
+        descripcion: "HB_CINECOPAS_DESC",
+        precio: 10,
+      },
+      {
+        nombre: "HB_AMERICANA",
+        descripcion: "HB_AMERICANA_DESC",
+        precio: 11,
+      },
+      {
+        nombre: "HB_BARBACOA",
+        descripcion: "HB_BARBACOA_DESC",
+        precio: 11,
+      },
+      {
+        nombre: "HB_SMASH_ZETA",
+        descripcion: "HB_SMASH_ZETA_DESC",
+        precio: 12,
+      },
+      {
+        nombre: "HB_V_DOBLE",
+        descripcion: "HB_V_DOBLE_DESC",
+        precio: 12,
+        nuevo: true,
+      },
+    ],
+  },
+  {
     nombre: "TOSTAS",
-    imagen: "no_image.jpg",
+    imagen: "tostada.png",
     productos: [
       {
         nombre: "DE_LOMO",
@@ -100,29 +148,8 @@ export const carta_bar: ICategoria[] = [
     ],
   },
   {
-    nombre: "PERRITOS",
-    imagen: "no_image.jpg",
-    productos: [
-      {
-        nombre: "CLASICO",
-        descripcion: "CLASICO_DESC",
-        precio: 3.5,
-      },
-      {
-        nombre: "HEAVENS",
-        descripcion: "HEAVENS_DESC",
-        precio: 5,
-      },
-      {
-        nombre: "QUO",
-        descripcion: "QUO_DESC",
-        precio: 5.5,
-      },
-    ],
-  },
-  {
     nombre: "SANDWICHES",
-    imagen: "no_image.jpg",
+    imagen: "sandwich.png",
     productos: [
       {
         nombre: "SW_MIXTO",
@@ -153,8 +180,29 @@ export const carta_bar: ICategoria[] = [
     ],
   },
   {
+    nombre: "PERRITOS",
+    imagen: "perrito.png",
+    productos: [
+      {
+        nombre: "CLASICO",
+        descripcion: "CLASICO_DESC",
+        precio: 3.5,
+      },
+      {
+        nombre: "HEAVENS",
+        descripcion: "HEAVENS_DESC",
+        precio: 5,
+      },
+      {
+        nombre: "QUO",
+        descripcion: "QUO_DESC",
+        precio: 5.5,
+      },
+    ],
+  },
+  {
     nombre: "GOFRES",
-    imagen: "no_image.jpg",
+    imagen: "gofre.png",
     productos: [
       {
         nombre: "SOLO",
@@ -175,54 +223,6 @@ export const carta_bar: ICategoria[] = [
       {
         nombre: "CON_BAYLEYS",
         precio: 4.5,
-      },
-    ],
-  },
-  {
-    nombre: "HAMBURGUESAS",
-    descripcion: "HB_CON_PAN_BRIOCHE",
-    imagen: "no_image.jpg",
-    productos: [
-      {
-        nombre: "HB_CLASICA_CON_QUESO",
-        descripcion: "HB_CLASICA_CON_QUESO_DESC",
-        precio: 7.5,
-      },
-      {
-        nombre: "HB_POLLO",
-        descripcion: "HB_POLLO_DESC",
-        precio: 8,
-      },
-      {
-        nombre: "HB_HEAVENS",
-        descripcion: "HB_HEAVENS_DESC",
-        precio: 9,
-      },
-      {
-        nombre: "HB_CINECOPAS",
-        descripcion: "HB_CINECOPAS_DESC",
-        precio: 10,
-      },
-      {
-        nombre: "HB_AMERICANA",
-        descripcion: "HB_AMERICANA_DESC",
-        precio: 11,
-      },
-      {
-        nombre: "HB_BARBACOA",
-        descripcion: "HB_BARBACOA_DESC",
-        precio: 11,
-      },
-      {
-        nombre: "HB_SMASH_ZETA",
-        descripcion: "HB_SMASH_ZETA_DESC",
-        precio: 12,
-      },
-      {
-        nombre: "HB_V_DOBLE",
-        descripcion: "HB_V_DOBLE_DESC",
-        precio: 12,
-        nuevo: true,
       },
     ],
   },
