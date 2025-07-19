@@ -8,7 +8,7 @@ const producto = Astro.props as IProducto;
 <div class="py-3">
   <div class="flex flex-row justify-between">
     <h3 class="text-xl font-semibold">{traducir(producto.nombre)}</h3>
-    <span class="text-lg font-semibold w-10">{producto.precio} €</span>
+    <span class="text-lg font-semibold w-12">{producto.precio} €</span>
   </div>
   {
     producto.descripcion && (
