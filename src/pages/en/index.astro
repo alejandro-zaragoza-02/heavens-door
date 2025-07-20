@@ -11,7 +11,7 @@ setIdioma('en');
 
 <Layout>
   <Header mostrarTodo={true} />
-  <div class="h-full flex flex-col mt-10 px-8 gap-4">
+  <main class="h-full flex flex-col flex-1 overflow-y-auto py-5 px-8 gap-4">
     {carta_bar.map((categoria) => <ElegirCategoria categoria={categoria} />)}
-  </div>
+  </main>
 </Layout>

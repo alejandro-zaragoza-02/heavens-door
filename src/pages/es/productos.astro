@@ -11,9 +11,9 @@ setIdioma('es');
 
 <Layout>
     <Header mostrarTodo={true} />
-    <div class="h-[calc(100vh-4rem)] overflow-y-auto scroll-smooth">
+    <main class="flex-1 overflow-y-auto scroll-smooth">
         {carta_bar.map((categoria) => <Categoria categoria={categoria} />)}
-    </div>
+    </main>
 
 
 </Layout>

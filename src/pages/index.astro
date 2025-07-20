@@ -10,14 +10,14 @@ const languages = [
 
 <Layout>
     <Header mostrarTodo={false} />
-    <div class="flex flex-col p-4 gap-6 mt-10">
+    <main class="flex flex-col flex-1 overflow-y-auto p-4 gap-6 mt-10">
         {languages.map(lang => (
                 <a class="flex items-center gap-4 px-4 py-2 bg-white/10 backdrop-blur text-white border border-white/20 rounded-xl" href={`/${lang.code}`}>
                     <img src={`/flags/${lang.flag}`} class="w-16 h-auto object-cover rounded-md mr-4" alt={lang.name + ' flag'}></img>
                     <h2 class="text-lg font-semibold text-white">{lang.name}</h2>
                 </a>
         ))}
-    </div>
+    </main>
 </Layout>
 
 
