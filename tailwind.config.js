@@ -6,7 +6,7 @@ export default {
     theme: {
         extend: {
             screens: {
-                'tiny': { max: '350px' },
+                'xs': '351px',
             },
         },
     },

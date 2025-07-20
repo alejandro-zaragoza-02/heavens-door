@@ -8,8 +8,8 @@ const { categoria } = Astro.props as {
 ---
 
 <a href={`${getIdioma()}/productos#${categoria.nombre}`} class="flex items-center gap-4 px-4 py-2 bg-white/10 backdrop-blur text-white border border-white/20 rounded-xl">
-    <img src={`/images/${categoria.imagen}`} class="w-16 h-16" />
-    <h2 class="text-2xl tiny:text-sm font-bold text-center ">
+    <img src={`/images/${categoria.imagen}`} class="w-12 xs:w-16 h-12 xs:h-16" />
+    <h2 class="text-base xs:text-2xl font-bold text-center ">
         {traducir(categoria.nombre)}
     </h2>
 </a>
