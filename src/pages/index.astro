@@ -1,23 +1,22 @@
 ---
-import '../styles/global.css'
+import "../styles/global.css";
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
+
 const languages = [
-    { code: 'es', name: 'Español', flag: 'es.svg' },
-    { code: 'en', name: 'English', flag: 'en.svg' },
+    { code: "es", name: "Español" },
+    { code: "en", name: "English" },
 ];
 ---
 
 <Layout>
     <Header mostrarTodo={false} />
-    <main class="flex flex-col flex-1 overflow-y-auto p-4 gap-6 mt-10">
-        {languages.map(lang => (
-                <a class="flex items-center gap-4 px-4 py-2 bg-white/10 backdrop-blur text-white border border-white/20 rounded-xl" href={`/${lang.code}`}>
-                    <img src={`/flags/${lang.flag}`} class="w-16 h-auto object-cover rounded-md mr-4" alt={lang.name + ' flag'}></img>
-                    <h2 class="text-lg font-semibold text-white">{lang.name}</h2>
-                </a>
+    <main class="menu-shell mt-8 flex flex-1 flex-col gap-3 overflow-y-auto p-5">
+        {languages.map((lang) => (
+            <a class="flex items-center justify-between rounded-lg border border-amber-200/15 bg-zinc-950/55 px-5 py-4 text-white shadow-lg shadow-black/20 backdrop-blur active:scale-[0.99]" href={`/${lang.code}`}>
+                <h2 class="text-lg font-semibold text-white">{lang.name}</h2>
+                <span class="text-xs font-semibold uppercase tracking-[0.18em] text-amber-200">{lang.code}</span>
+            </a>
         ))}
     </main>
 </Layout>
-
-

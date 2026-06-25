@@ -1,15 +1,29 @@
 ---
-import {getIdioma} from "../utils/i18n";
+import {getIdioma, traducir} from "../utils/i18n";
 
 const {mostrarTodo} = Astro.props as { mostrarTodo: boolean };
+const idioma = getIdioma();
+const idiomaAlternativo = idioma === "es" ? "en" : "es";
+const rutaProductos = Astro.url.pathname.includes("/productos");
+const hrefIdiomaAlternativo = rutaProductos ? `/${idiomaAlternativo}/productos` : `/${idiomaAlternativo}`;
 ---
 
-<header class="flex justify-center p-4">
-    {mostrarTodo && (<a href={`/${getIdioma()}`} class="flex-1 flex items-center sticky top-0">
-        <img src="/images/lupa.svg" alt="Categorias" class="text-white-100 w-5 rounded"/>
+<header class="site-header">
+    {mostrarTodo && (<a href={`/${idioma}`} class="flex-1 text-xs font-semibold uppercase tracking-[0.18em] text-amber-200/90">
+        {traducir("CARTA")}
     </a>)}
-    <img src="/images/logo.png" alt="Heaven's Door" class="w-50 xs:w-60 h-10 object-cover" />
-    {mostrarTodo && (<a href="/" class="flex-1 flex justify-end">
-        <img src={`/flags/${getIdioma()}.svg`} class="w-8 rounded" alt={getIdioma()}/>
+    <a href={`/${idioma}`} aria-label="Heaven's Door" class="shrink-0">
+        <img
+            src="/images/logo.png"
+            alt="Heaven's Door"
+            width="240"
+            height="60"
+            decoding="async"
+            fetchpriority="high"
+            class="h-10 w-40 object-contain xs:w-48"
+        />
+    </a>
+    {mostrarTodo && (<a href={hrefIdiomaAlternativo} class="flex-1 text-right text-xs font-semibold uppercase tracking-[0.18em] text-amber-200/90">
+        {idiomaAlternativo}
     </a>)}
 </header>

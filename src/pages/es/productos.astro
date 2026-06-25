@@ -5,15 +5,15 @@ import {carta_bar} from "../../data/carta";
 import Categoria from "../../components/Categoria.astro";
 import Header from "../../components/Header.astro";
 import {setIdioma} from "../../utils/i18n";
+import NavegacionCategorias from "../../components/NavegacionCategorias.astro";
 
 setIdioma('es');
 ---
 
 <Layout>
     <Header mostrarTodo={true} />
-    <main class="flex-1 overflow-y-auto scroll-smooth">
+    <NavegacionCategorias categorias={carta_bar} />
+    <main class="flex-1 overflow-y-auto scroll-smooth pb-6">
         {carta_bar.map((categoria) => <Categoria categoria={categoria} />)}
     </main>
-
-
 </Layout>

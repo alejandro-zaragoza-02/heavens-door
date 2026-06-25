@@ -1,0 +1,14 @@
+---
+import type { ICategoria } from "../interfaces/Categoria";
+import { traducir } from "../utils/i18n";
+
+const { categorias } = Astro.props as {
+  categorias: ICategoria[];
+};
+---
+
+<nav class="section-tabs" aria-label={traducir("SECCIONES")}>
+  {categorias.map((categoria) => (
+    <a href={`#${categoria.nombre}`}>{traducir(categoria.nombre)}</a>
+  ))}
+</nav>

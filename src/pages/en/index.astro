@@ -3,6 +3,7 @@ import "../../styles/global.css";
 import Layout from "../../layouts/Layout.astro";
 import {carta_bar} from "../../data/carta";
 import {setIdioma} from "../../utils/i18n";
+import {traducir} from "../../utils/i18n";
 import Header from "../../components/Header.astro";
 import ElegirCategoria from "../../components/ElegirCategoria.astro";
 
@@ -11,7 +12,12 @@ setIdioma('en');
 
 <Layout>
   <Header mostrarTodo={true} />
-  <main class="h-full flex flex-col flex-1 overflow-y-auto py-5 px-8 gap-4">
+  <main class="menu-shell flex flex-1 flex-col gap-3 overflow-y-auto px-5 py-5">
+    <section class="menu-intro">
+      <span>{traducir("CARTA_DIGITAL")}</span>
+      <h1>Heaven's Door</h1>
+      <p>{traducir("ELIGE_CATEGORIA")}</p>
+    </section>
     {carta_bar.map((categoria) => <ElegirCategoria categoria={categoria} />)}
   </main>
 </Layout>
