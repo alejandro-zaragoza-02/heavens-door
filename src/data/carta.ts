@@ -15,6 +15,10 @@ export const carta_bar: ICategoria[] = [
         precio: 10,
       },
       {
+        nombre: "TABLA_JAMON_IBERICO_QUESO_CURADO",
+        precio: 12,
+      },
+      {
         nombre: "SURTIDO_HEAVENS",
         descripcion: "SURTIDO_HEAVENS_DESC",
         precio: 16,
@@ -142,17 +146,17 @@ export const carta_bar: ICategoria[] = [
       {
         nombre: "SW_DE_POLLO",
         descripcion: "SW_DE_POLLO_DESC",
-        precio: 5.5,
+        precio: 5,
       },
       {
         nombre: "SW_METROPOLIS",
         descripcion: "SW_METROPOLIS_DESC",
-        precio: 5.5,
+        precio: 5,
       },
       {
         nombre: "SW_DE_POLLO_PLUS",
         descripcion: "SW_DE_POLLO_PLUS_DESC",
-        precio: 6.5,
+        precio: 6,
       },
       {
         nombre: "SW_HEAVENS",
@@ -187,7 +191,7 @@ export const carta_bar: ICategoria[] = [
     imagen: "gofre.webp",
     productos: [
       {
-        nombre: "TARTA_OPERA",
+        nombre: "TARTA_TRES_CHOCOLATES",
         precio: 7,
       },
       {

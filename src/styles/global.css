@@ -176,6 +176,19 @@
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
+.allergen-note {
+    margin: 1.75rem 1rem 0;
+    border: 1px solid rgba(253, 230, 138, 0.16);
+    border-radius: 0.75rem;
+    background: rgba(47, 28, 17, 0.68);
+    padding: 0.9rem 1rem;
+    color: rgba(253, 230, 138, 0.9);
+    font-size: 0.8rem;
+    font-weight: 600;
+    line-height: 1.45;
+    text-align: center;
+}
+
 @media (min-width: 640px) {
     .product-list {
         grid-template-columns: repeat(2, minmax(0, 1fr));
