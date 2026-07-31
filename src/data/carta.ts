@@ -192,7 +192,7 @@ export const carta_bar: ICategoria[] = [
     productos: [
       {
         nombre: "TARTA_TRES_CHOCOLATES",
-        precio: 7,
+        precio: 6,
       },
       {
         nombre: "TIRAMISU",
